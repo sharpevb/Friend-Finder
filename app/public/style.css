@@ -1,0 +1,15 @@
+#survey {
+    font-size: 35pt;
+}
+
+#about, #name {
+    margin-bottom: 10px;
+}
+
+#question {
+    margin-bottom: 5px;
+}
+
+#choices {
+    padding-bottom: 30px;
+}

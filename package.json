@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Friend Finder",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharpevb/Friend-Finder.git"
+  },
+  "author": "Victoria Sharpe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharpevb/Friend-Finder"
+  },
+  "homepage": "https://github.com/sharpevb/Friend-Finder#readme",
+  "dependencies": {
+    "bulma": "^0.7.5"
+  }
+}
