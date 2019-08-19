@@ -1,7 +1,7 @@
 {
-  "name": "app",
+  "name": "Friend-Finder",
   "version": "1.0.0",
-  "description": "Friend Finder",
+  "description": "You're ten questions away from finding your best friend!",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/sharpevb/Friend-Finder#readme",
   "dependencies": {
-    "bulma": "^0.7.5"
+    "bulma": "^0.7.5",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
   }
 }
