@@ -13,5 +13,7 @@ module.exports = function(app) {
         console.log(newFriend);
         friendData.push(newFriend);
         res.json(newFriend);
+
+        // Compute match
     });
 }
