@@ -10,10 +10,11 @@
     margin-bottom: 10px;
 }
 
-#choices {
+.field {
     padding-bottom: 30px;
 }
 
 #question {
     font-weight: 700;
+    padding-bottom: 5px;
 }

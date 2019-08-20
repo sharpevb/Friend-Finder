@@ -11,19 +11,19 @@
 </head>
 
 <body>
-    <!--<section class="hero is-small is-primary is-bold">
+    <section class="hero is-small is-primary is-bold">
         <div class="hero-body">
             <div class="container">
                 <h1 class="title">
                     Friend Finder
                 </h1>
                 <h2 class="subtitle">
-                    You're ten questions away from finding your best friend!
+                    <p>You're ten questions away from finding your best friend!</p>
                 </h2>
             </div>
 
         </div>
-    </section>-->
+    </section>
 
     <section class="section">
         <div class="container">
@@ -34,36 +34,31 @@
         <div class="container">
             <h1 class="title" id="about">About You</h1>
             <h4>Name (Required)</h4>
-            <input class="input is-primary" type="text" id="name" placeholder="Beyoncé">
+            <input class="input is-primary is-rounded" type="text" id="name" placeholder="Beyoncé">
             <h4>Photo (Required)</h4>
-            <input class="input is-primary" type="text" id="name" placeholder="URL">
+            <input class="input is-primary is-rounded" type="text" id="name" placeholder="URL">
             <hr>
         </div>
+
+        <!-- QUESTIONS -->
+
         <!-- Question 1 -->
         <div class="container">
             <h1 class="title" id="question-title">Question 1</h1>
             <h2 id="question">You enjoy social events with lots of people.</h2>
-            <div class="control" id="choices">
-                <label class="radio">
-                    <input type="radio" name="answer1">
-                    Strongly Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer1">
-                    Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer1">
-                    Neutral
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer1">
-                    Agree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer1">
-                    Strongly Agree
-                </label>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary is-rounded">
+                        <select id="question1">
+                            <option value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -71,27 +66,19 @@
         <div class="container">
             <h1 class="title" id="question-title">Question 2</h1>
             <h2 id="question">You prefer to travel with an itinerary rather than spontaneous plans.</h2>
-            <div class="control" id="choices">
-                <label class="radio">
-                    <input type="radio" name="answer2">
-                    Strongly Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer2">
-                    Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer2">
-                    Neutral
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer2">
-                    Agree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer2">
-                    Strongly Agree
-                </label>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary is-rounded">
+                        <select id="question2">
+                            <option value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -99,140 +86,105 @@
         <div class="container">
             <h1 class="title" id="question-title">Question 3</h1>
             <h2 id="question">You overthink things.</h2>
-            <div class="control" id="choices">
-                <label class="radio">
-                    <input type="radio" name="answer3">
-                    Strongly Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer3">
-                    Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer3">
-                    Neutral
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer3">
-                    Agree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer3">
-                    Strongly Agree
-                </label>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary is-rounded">
+                        <select id="question3">
+                            <option value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
 
         <!-- Question 4 -->
         <div class="container">
             <h1 class="title" id="question-title">Question 4</h1>
             <h2 id="question">You'd rather stay home and relax than go out.</h2>
-            <div class="control" id="choices">
-                <label class="radio">
-                    <input type="radio" name="answer4">
-                    Strongly Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer4">
-                    Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer4">
-                    Neutral
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer4">
-                    Agree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer4">
-                    Strongly Agree
-                </label>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary is-rounded">
+                        <select id="question4">
+                            <option value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
 
         <!-- Question 5 -->
         <div class="container">
             <h1 class="title" id="question-title">Question 5</h1>
             <h2 id="question">You prefer beer over wine.</h2>
-            <div class="control" id="choices">
-                <label class="radio">
-                    <input type="radio" name="answer5">
-                    Strongly Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer5">
-                    Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer5">
-                    Neutral
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer5">
-                    Agree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer5">
-                    Strongly Agree
-                </label>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary is-rounded">
+                        <select id="question5">
+                            <option value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
 
         <!-- Question 6 -->
         <div class="container">
             <h1 class="title" id="question-title">Question 6</h1>
             <h2 id="question">You consider yourself an extrovert.</h2>
-            <div class="control" id="choices">
-                <label class="radio">
-                    <input type="radio" name="answer6">
-                    Strongly Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer6">
-                    Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer6">
-                    Neutral
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer6">
-                    Agree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer6">
-                    Strongly Agree
-                </label>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary is-rounded">
+                        <select id="question6">
+                            <option value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
 
         <!-- Question 7 -->
         <div class="container">
             <h1 class="title" id="question-title">Question 7</h1>
             <h2 id="question">You prefer spring and summer over fall and winter.</h2>
-            <div class="control" id="choices">
-                <label class="radio">
-                    <input type="radio" name="answer7">
-                    Strongly Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer7">
-                    Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer7">
-                    Neutral
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer7">
-                    Agree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer7">
-                    Strongly Agree
-                </label>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary is-rounded">
+                        <select id="question7">
+                            <option value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
 
         <!-- Question 8 -->
@@ -240,84 +192,63 @@
             <h1 class="title" id="question-title">Question 8</h1>
             <h2 id="question">When you're with a group of people you don't know, it's easy for you to start up a
                 conversation.</h2>
-            <div class="control" id="choices">
-                <label class="radio">
-                    <input type="radio" name="answer8">
-                    Strongly Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer8">
-                    Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer8">
-                    Neutral
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer8">
-                    Agree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer8">
-                    Strongly Agree
-                </label>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary is-rounded">
+                        <select id="question8">
+                            <option value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
 
         <!-- Question 9 -->
         <div class="container">
             <h1 class="title" id="question-title">Question 9</h1>
             <h2 id="question">Having job/life experience in a field is just as valuable as a degree in that field.</h2>
-            <div class="control" id="choices">
-                <label class="radio">
-                    <input type="radio" name="answer9">
-                    Strongly Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer9">
-                    Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer9">
-                    Neutral
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer9">
-                    Agree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer9">
-                    Strongly Agree
-                </label>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary is-rounded">
+                        <select id="question9">
+                            <option value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
 
         <!-- Question 10 -->
         <div class="container">
             <h1 class="title" id="question-title">Question 10</h1>
             <h2 id="question">You prefer to live in the city than in the country.</h2>
-            <div class="control" id="choices">
-                <label class="radio">
-                    <input type="radio" name="answer10">
-                    Strongly Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer10">
-                    Disagree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer10">
-                    Neutral
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer10">
-                    Agree
-                </label>
-                <label class="radio">
-                    <input type="radio" name="answer10">
-                    Strongly Agree
-                </label>
+            <div class="field">
+                <div class="control">
+                    <div class="select is-primary is-rounded">
+                        <select id="question10">
+                            <option value="">Select an Option</option>
+                            <option value="1">1 (Strongly Disagree)</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
 
         <div>
