@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <section class="hero is-small is-primary is-bold">
         <div class="hero-body">
             <div class="container">
@@ -25,12 +26,14 @@
         </div>
     </section>
 
+    <!-- Title -->
     <section class="section">
         <div class="container">
             <h1 class="title" id="survey">Survey Questions</h1>
             <hr>
         </div>
 
+        <!-- Name & Picture -->
         <div class="container">
             <h1 class="title" id="about">About You</h1>
             <h4>Name (Required)</h4>
@@ -251,8 +254,10 @@
         </div>
         </div>
 
+        <!-- Submit Button -->
         <div>
-            <button class="button is-rounded is-primary" id="submit-button">Submit</button>
+            <button type="button" class="button is-rounded is-primary" id="submit-button"
+                data-target="#friendModal">Submit</button>
         </div>
         <br>
         <hr>
@@ -262,7 +267,36 @@
         </div>
     </section>
 
+    <!-- Results Modal -->
+    <div id="friend-modal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Your new BFF is...</p>
+                <a href="/survey"><button id="modal-close" class="delete" aria-label="close"></button></a> 
+            </header>
+            <section class="modal-card-body">
+                <h2 id="match"></h2>
+                <img id="matchImg" src=""></img>
+            </section>
+            <footer class="modal-card-foot">
+                <a href="/survey"><button class="button is-rounded is-primary" id="return-button">Return</button></a>
+            </footer>
+        </div>
+    </div>
 
+    <script type="text/javascript">
+        // Modal opening on Submit button
+        $("#submit-button").on("click", function () {
+            $("#friend-modal").addClass("is-active");
+            $("#match").html("<p>Yay!</p>");
+        });
+        // Modal closing
+        $("#modal-close", "#return-button").on("click", function () {
+            $("#modal-close", "#return-button").removeClass("active");
+        });
+
+    </script>
 </body>
 
 </html>
