@@ -34,19 +34,19 @@ var friendData = [
     },
 
     {
-        "name": "Severus Snape",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Ootp076.jpg/220px-Ootp076.jpg",
+        "name": "Chad",
+        "photo": "https://cdn.shopify.com/s/files/1/0731/0945/products/Southern_Tide_Jack_Stripe_Performance_Pique_Polo_Shirt_georgia_peach_600x.jpg?v=1563980642",
         "scores": [
-            1,
-            4,
-            1,
-            1,
-            3,
+            5,
+            2,
             1,
             1,
             1,
             5,
-            2
+            5,
+            5,
+            2,
+            4
         ]
     },
 

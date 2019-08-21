@@ -7,6 +7,8 @@ var PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+// To link files from the "public" folder
 app.use(express.static("./app/public"));
 
 // Routes
