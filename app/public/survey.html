@@ -289,13 +289,18 @@
         // Modal opening on Submit button
         $("#submit-button").on("click", function () {
             $("#friend-modal").addClass("is-active");
+            $("#match").text(data.name);
+            $("#matchImg").attr("src", friendImage);
         });
         // Modal closing
         $("#modal-close", "#return-button").on("click", function () {
             $("#modal-close", "#return-button").removeClass("active");
         });
 
+        /* 
+
         // Receiving user input
+
         function result() {
         var userData = {
             name: $("#name").val(),
@@ -314,11 +319,11 @@
             ]
         };
         $.post("/api/friends", userData, function (data) {
-            $("#match").text(data.name);
-            $("#matchImg").attr("src", data.photo);
+            // I'm not sure if I need to move lines 292 and 293 here or to combine those with $.post function
         })
         };
-        result();
+        */
+
     </script>
     
 </body>

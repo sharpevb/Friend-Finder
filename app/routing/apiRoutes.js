@@ -10,12 +10,22 @@ module.exports = function(app) {
     // Post
     app.post("api/survey", friendData, function (req, res) {
         var newFriend = req.body
-        console.log(newFriend);
+        var responses = input.scores
         friendData.push(newFriend);
         res.json(newFriend);
 
-        // Compute match
+        // Compute match //
+
+        // Variables
         var friendName
         var friendImage
+        var totalDifference
+
+        // Need to calculate the differences between each scores
+
+        // Need to loop to go through the friendData and the user's scores
+
+        // Post results
+            // return res.json
     });
 }
