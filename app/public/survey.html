@@ -39,7 +39,7 @@
             <h4>Name (Required)</h4>
             <input class="input is-primary is-rounded" type="text" id="name" placeholder="Beyoncé">
             <h4>Photo (Required)</h4>
-            <input class="input is-primary is-rounded" type="text" id="name" placeholder="URL">
+            <input class="input is-primary is-rounded" type="text" id="photo" placeholder="URL">
             <hr>
         </div>
 
@@ -289,12 +289,35 @@
         // Modal opening on Submit button
         $("#submit-button").on("click", function () {
             $("#friend-modal").addClass("is-active");
-            $("#match").html("<p>Yay!</p>");
         });
         // Modal closing
         $("#modal-close", "#return-button").on("click", function () {
             $("#modal-close", "#return-button").removeClass("active");
         });
+
+        // Receiving user input
+        function result() {
+        var userData = {
+            name: $("#name").val(),
+            photo: $("#photo").val(),
+            scores: [
+                parseInt($("#question1").val()),
+                parseInt($("#question2").val()),
+                parseInt($("#question3").val()),
+                parseInt($("#question4").val()),
+                parseInt($("#question5").val()),
+                parseInt($("#question6").val()),
+                parseInt($("#question7").val()),
+                parseInt($("#question8").val()),
+                parseInt($("#question9").val()),
+                parseInt($("#question10").val())
+            ]
+        };
+        $.post("/api/friends", userData, function (data) {
+            $("#match").text(data.name);
+            $("#matchImg").attr("src", data.photo);
+        })
+        };
 
     </script>
     

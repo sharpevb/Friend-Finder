@@ -8,12 +8,14 @@ module.exports = function(app) {
       });
 
     // Post
-    app.post("api/survey", function (req, res) {
+    app.post("api/survey", friendData, function (req, res) {
         var newFriend = req.body
         console.log(newFriend);
         friendData.push(newFriend);
         res.json(newFriend);
 
         // Compute match
+        var friendName
+        var friendImage
     });
 }
