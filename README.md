@@ -1,6 +1,6 @@
 # Friend Finder
 
-You're ten questions away from finding your best friend!
+*You're ten questions away from finding your best friend!*
 
 Live on Heroku: https://pacific-lake-81900.herokuapp.com/
 
