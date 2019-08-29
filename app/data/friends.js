@@ -82,7 +82,7 @@ var friendData = [
             5,
             4
         ]
-    }
+    },
 
 ];
 

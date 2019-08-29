@@ -8,24 +8,39 @@ module.exports = function(app) {
       });
 
     // Post
-    app.post("api/survey", friendData, function (req, res) {
-        var newFriend = req.body
-        var responses = input.scores
-        friendData.push(newFriend);
-        res.json(newFriend);
+    app.post("api/survey", function (req, res) {
+        
+        var responses = userData.scores
+        
+        friendData.send(app);
+        res.json(app);
 
         // Compute match //
 
-        // Variables
-        var friendName
-        var friendImage
-        var totalDifference
+        var friendName = ""; 
+        var friendImage = ""; 
+        var totalDifference = 100;
+    
+        for (var i in friendData) {
+            
+            var difference = 0
 
+            for (var r in responses) {
+                difference += Math.abs(friendData[i].scores[r] - responses[r]);
+            }
+
+            if (difference < totalDifference) {
+                totalDifference = difference;
+                friendName = friendData[i].name;
+                friendImage = friendData[i].photo;
+            }
+        }
         // Need to calculate the differences between each scores
 
         // Need to loop to go through the friendData and the user's scores
 
         // Post results
-            // return res.json
+            
     });
+    friendData.push(app);
 }

@@ -273,10 +273,10 @@
         <div class="modal-card">
             <header class="modal-card-head">
                 <p class="modal-card-title">Your new BFF is...</p>
-                <a href="/survey"><button id="modal-close" class="delete" aria-label="close"></button></a> 
+                <a href="/survey"><button id="modal-close" class="delete" aria-label="close"></button></a>
             </header>
             <section class="modal-card-body">
-                <h2 id="match"></h2>
+                <h2 id="matchName"></h2>
                 <img id="matchImg" src=""></img>
             </section>
             <footer class="modal-card-foot">
@@ -288,44 +288,59 @@
     <script type="text/javascript">
         // Modal opening on Submit button
         $("#submit-button").on("click", function () {
-            $("#friend-modal").addClass("is-active");
-            $("#match").text(data.name);
-            $("#matchImg").attr("src", friendImage);
-        });
-        // Modal closing
-        $("#modal-close", "#return-button").on("click", function () {
-            $("#modal-close", "#return-button").removeClass("active");
-        });
+            $("#friend-modal").addClass("is-active");            
+            event.preventDefault();
 
-        /* 
+            var valid = true;
 
-        // Receiving user input
+            if ($("#userName").val() === "" || $("#userPhoto").val() === "") {
+                valid = false;
+            } else if (
+                $("#question1").val() === "" ||
+                $("#question2").val() === "" ||
+                $("#question3").val() === "" ||
+                $("#question4").val() === "" ||
+                $("#question5").val() === "" ||
+                $("#question6").val() === "" ||
+                $("#question7").val() === "" ||
+                $("#question8").val() === "" ||
+                $("#question9").val() === "" ||
+                $("#question10").val() === ""
+            ) {
+                valid = false;
+            }
+            // If everything is filled in on sumbit
+            if (valid === true) {
+                var userData = {
+                    name: $("#name").val().trim(),
+                    photo: $("#photo").val().trim(),
+                    scores: [
+                        parseInt($("#question1").val()),
+                        parseInt($("#question2").val()),
+                        parseInt($("#question3").val()),
+                        parseInt($("#question4").val()),
+                        parseInt($("#question5").val()),
+                        parseInt($("#question6").val()),
+                        parseInt($("#question7").val()),
+                        parseInt($("#question8").val()),
+                        parseInt($("#question9").val()),
+                        parseInt($("#question10").val())
+                    ]
+                };
+                $.post("/api/friends", userData, function (data) {
+                    $("#matchName").text(data.name);
+                    $("#matchImg").attr("src", data.photo);
+                });
+            }
 
-        function result() {
-        var userData = {
-            name: $("#name").val(),
-            photo: $("#photo").val(),
-            scores: [
-                parseInt($("#question1").val()),
-                parseInt($("#question2").val()),
-                parseInt($("#question3").val()),
-                parseInt($("#question4").val()),
-                parseInt($("#question5").val()),
-                parseInt($("#question6").val()),
-                parseInt($("#question7").val()),
-                parseInt($("#question8").val()),
-                parseInt($("#question9").val()),
-                parseInt($("#question10").val())
-            ]
-        };
-        $.post("/api/friends", userData, function (data) {
-            // I'm not sure if I need to move lines 292 and 293 here or to combine those with $.post function
-        })
-        };
-        */
+            // Modal closing
+            $("#modal-close", "#return-button").on("click", function () {
+                $("#modal-close", "#return-button").removeClass("active");
+            }); 
 
+        })  
+        
     </script>
-    
 </body>
 
 </html>
