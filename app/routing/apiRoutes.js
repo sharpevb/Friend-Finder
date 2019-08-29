@@ -19,28 +19,18 @@ module.exports = function(app) {
 
         var friendName = ""; 
         var friendImage = ""; 
-        var totalDifference = 100;
+        var totalDifference = "";
     
         for (var i in friendData) {
-            
-            var difference = 0
 
             for (var r in responses) {
-                difference += Math.abs(friendData[i].scores[r] - responses[r]);
+                (totalDifference += Math.abs(friendData[i].scores[r] - responses[r]));
             }
-
-            if (difference < totalDifference) {
-                totalDifference = difference;
                 friendName = friendData[i].name;
                 friendImage = friendData[i].photo;
             }
-        }
-        // Need to calculate the differences between each scores
-
-        // Need to loop to go through the friendData and the user's scores
-
-        // Post results
+        },
+        // Results not showing up
             
-    });
-    friendData.push(app);
-}
+    friendData.push(app));
+};
